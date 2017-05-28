@@ -1,0 +1,23 @@
+{
+  "name": "reactapp",
+  "version": "1.0.0",
+  "description": "React 101",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/t2013anurag/reactapp.git"
+  },
+  "keywords": [
+    "react",
+    "reactjs"
+  ],
+  "author": "Anurag Tiwari (tiwari.anurag126@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/t2013anurag/reactapp/issues"
+  },
+  "homepage": "https://github.com/t2013anurag/reactapp#readme"
+}
