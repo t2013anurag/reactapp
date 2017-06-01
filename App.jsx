@@ -25,9 +25,22 @@ class App extends React.Component {
 			],
 
 			header : "This is the Header Content in state",
-			content : "This is the Content."
+			content : "This is the Content.",
+
+			stateData : []
 		}
-	}
+
+		// setting state handler
+		this.setStateHandler = this.setStateHandler.bind(this);
+	};
+
+	// setting data to stateData
+	setStateHandler() {
+		var item = 'setState...';
+		var myArray = this.state.stateData;
+		myArray.push(item);
+		this.setState({stateData : myArray})
+	};
 
 	render() {
 			var i = 1;
@@ -39,7 +52,7 @@ class App extends React.Component {
 		return (
 			<div style = {myStyle}>
 				Hello World!!
-			
+				<br/>
 				{i == 1 ? 'True' : 'False'}
 
 				<Header headerProp = {this.state.header}/>
@@ -50,6 +63,9 @@ class App extends React.Component {
 						{this.state.data.map((person, i) => <TableRow key = {i} data = {person} />)}
 					</tbody>
 				</table>
+
+				<button onClick = {this.setStateHandler}>SET STATE</button>
+				<h3>State Array : {this.state.stateData}</h3>
 
 			</div>
 		);
