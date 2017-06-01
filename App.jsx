@@ -72,8 +72,8 @@ class App extends React.Component {
 	}
 }
 
-// other compnents (Stateless)
 
+// other compnents (Stateless)
 class Header extends React.Component {
 	render() {
 		return (
@@ -94,8 +94,8 @@ class Content extends React.Component {
 	}
 }
 
-// Stateful components 
 
+// Stateful components 
 class TableRow extends React.Component {
 	render() {
 		return (
