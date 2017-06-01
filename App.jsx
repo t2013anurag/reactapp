@@ -22,7 +22,10 @@ class App extends React.Component {
 					"name" : "Johnathan",
 					"age" : 40
 				},
-			]
+			],
+
+			header : "This is the Header Content in state",
+			content : "This is the Content."
 		}
 	}
 
@@ -39,8 +42,8 @@ class App extends React.Component {
 			
 				{i == 1 ? 'True' : 'False'}
 
-				<Header/>
-				<Content/>
+				<Header headerProp = {this.state.header}/>
+				<Content contentProp = {this.state.content}/>
 
 				<table>
 					<tbody>
@@ -59,7 +62,7 @@ class Header extends React.Component {
 	render() {
 		return (
 			<div>
-				Hello Doe, John
+				{this.props.headerProp}
 			</div>
 		);
 	}
@@ -69,7 +72,7 @@ class Content extends React.Component {
 	render() {
 		return (
 			<div>
-				Welcome Doe, John. This is React.
+				{this.props.contentProp}
 			</div>
 		);
 	}
